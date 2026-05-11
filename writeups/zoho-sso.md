@@ -40,6 +40,8 @@ Here, it didn’t.
 
 The application treated the invitation link itself as sufficient proof of identity. Once the link was opened, the only step required was setting a password. There was no email verification, no OTP, and no confirmation that the person completing the flow actually controlled the invited email address.
 
+![Burp Request](/assets/img/Zoho/Unauthorised_userCreation.png)
+
 In other words, the system trusted the link completely and never validated the user behind it.
 
 ---
@@ -55,6 +57,7 @@ I decided to follow the flow exactly as intended.
 
 That was it.
 
+![Burp Request](/assets/img/Zoho/Unauthorised_access.png)
 The account was created instantly, and I was automatically authenticated as the invited user. No verification step, no challenge, nothing in between.
 
 The application redirected me into a Zoho service under that identity.
@@ -118,6 +121,7 @@ With these controls in place, possession of the link alone is no longer enough.
 
 Reported responsibly. The issue was acknowledged and fixed by the Zoho security team.
 
+![Burp Request](/assets/img/Zoho/zoho_reward.jpg)
 ---
 
 ## Closing Thoughts
