@@ -24,7 +24,7 @@ https://accounts.zoho.com/invitation/org/user/
 
 Opening it led to a live invitation page for a user I didn’t know. No authentication required, no access control gate. Just a clean onboarding flow asking me to set a password.
 
-![Burp Request](/assets/img/Zoho/Vulnerable_invite_link.png)
+![Burp Request]({{ '/assets/img/Zoho/Vulnerable_invite_link.png' | relative_url }})
 
 That raised a simple question: *what actually proves I own this email address?*
 
