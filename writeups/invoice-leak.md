@@ -54,6 +54,8 @@ The access control check was effectively nonexistent. The full flow:
 4. Replace the UUID with one from a different invoice (obtained via enumeration, link sharing, or log leakage)
 5. View another user's invoice with no credentials
 
+ ![PII Leak through Unauthorised access to Invoice via IDOR]({{ '/assets/img/Zoho/Invoice.png' | relative_url }})
+
 I didn't attempt large-scale enumeration — that wasn't necessary to prove the vulnerability. Confirming that the endpoint returned data without authentication, and that swapping identifiers returned different users' data, was sufficient.
 
 ---
